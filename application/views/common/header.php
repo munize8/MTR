@@ -60,7 +60,7 @@
         </div>
     </div>
      <!--======= Navigation =========-->
-    <div class="banner_outer">
+    <div id="outer_banner" class="banner_outer">
     	<div class="container">
         	<div class="banner_box_outer">
         		<div class="banner_box">   </div>

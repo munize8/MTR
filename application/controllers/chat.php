@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Chat extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
             $header = $this->load->view('common/header',array(),true);
-            $content = $this->load->view('site/index',array(),true);
+            $content = $this->load->view('site/chat',array(),true);
             $footer = $this->load->view('common/footer',array(),true);
 		$this->load->view('base',  compact('header','content','footer'));
 	}
