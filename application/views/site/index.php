@@ -9,100 +9,102 @@
             </ul>
             <div id="myTabContent" class="tab-content">
                 <div class="tab-pane active" id="home">
-                    <ul>
+                    <form action="<?php echo base_url('index.php/welcome/register_member');?>" method="post">
+                        <ul>
 
-                        <li>
-                            <label>Profile for :</label> 
-                            <select name="profile_for">
-                                <option value="" selected="selected">-Select-</option>
-                                <option value="groom">Groom</option>
-                                <option value="bride">Bride</option>
-                            </select>
-                        </li>
+                            <li>
+                                <label>Profile for :</label> 
+                                <select data-validation="required" name="profile_for">
+                                    <option value="" selected="selected">-Select-</option>
+                                    <option value="groom">Groom</option>
+                                    <option value="bride">Bride</option>
+                                </select>
+                            </li>
 
-                        <li>
-                            <label>Name : </label>
-                            <input name="name"  class="input_text"  type="text">
-                        </li>
+                            <li>
+                                <label>Name : </label>
+                                <input data-validation="required" name="name"  class="input_text"  type="text">
+                            </li>
 
-                        <li>
-                            <label>Gender :</label>
-                            <input type="radio" name="gender" value="male"> Male &nbsp;&nbsp;&nbsp; <input type="radio" name="gender" name="female"> Female
-                        </li>
+                            <li>
+                                <label>Gender :</label>
+                                <input type="radio" checked="" name="gender" value="male"> Male &nbsp;&nbsp;&nbsp; <input type="radio" name="gender" value="female"> Female
+                            </li>
 
-                        <li>
-                            <label>Date of birth :</label> 
-                            <select id="dob_dd" class="dd">
-                                <option selected="selected" value="">DD</option>
-                                <option>1</option>
-                            </select> 
+                            <li>
+                                <label>Date of birth :</label> 
+                                <select data-validation="required" id="dob_dd" name="dob_dd" class="dd">
+                                    <option selected="selected" value="">DD</option>
+                                    <option>1</option>
+                                </select> 
 
-                            <select id="dob_mm" class="mm">
-                                <option selected="selected" value="">MM</option>
-                                <option>1</option>
-                            </select> 
+                                <select data-validation="required" id="dob_mm" name="dob_mm"  class="mm">
+                                    <option selected="selected" value="">MM</option>
+                                    <option>1</option>
+                                </select> 
 
-                            <select id="dob_yy" class="yy">
-                                <option selected="selected" value="" >YEAR</option>
-                                <option>1</option>
-                            </select>
-                        </li>
+                                <select data-validation="required" id="dob_yy" name="dob_yy"  class="yy">
+                                    <option selected="selected" value="" >YEAR</option>
+                                    <option>1</option>
+                                </select>
+                            </li>
 
-                        <li>
-                            <label>Religion :</label>
-                            <select>
-                                <option selected="selected">-Select-</option>
-                                <option>1</option>
-                            </select>
-                        </li>
+                            <li>
+                                <label>Religion :</label>
+                                <select data-validation="required"  name="religion" >
+                                    <option selected="selected">-Select-</option>
+                                    <option>1</option>
+                                </select>
+                            </li>
 
 
-                        <li>
-                            <label>Caste / Division :</label> 
-                            <select>
-                                <option selected="selected">-Select-</option>
-                                <option>1</option>
-                                <option>2</option>
-                            </select>
-                        </li>
+                            <li>
+                                <label>Caste / Division :</label> 
+                                <select  data-validation="required" name="caste" >
+                                    <option selected="selected">-Select-</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </li>
 
-                        <li>
-                            <label>Mother Language :</label>
-                            <select>
-                                <option selected="selected">-Select-</option>
-                                <option>1</option>
-                                <option>2</option>
-                            </select>
-                        </li>
+                            <li>
+                                <label>Mother Language :</label>
+                                <select  data-validation="required" name="mother_language" >
+                                    <option selected="selected">-Select-</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </li>
 
-                        <li>
-                            <label>Country :</label> 
-                            <select>
-                                <option selected="selected">-Select-</option>
-                                <option>1</option>
-                                <option>2</option>
-                            </select>
-                        </li>
+                            <li>
+                                <label>Country :</label> 
+                                <select  data-validation="required" name="country" >
+                                    <option selected="selected">-Select-</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </li>
 
-                        <li>
-                            <label>Mobile no :</label> 
-                            <input type="tel" name="mobile" class="input_text">
-                        </li>
+                            <li>
+                                <label>Mobile no :</label> 
+                                <input data-validation="required" type="tel" name="mobile" class="input_text">
+                            </li>
 
-                        <li>
-                            <label>Email  :</label>
-                            <input class="input_text" name="email" type="email">
-                        </li>
+                            <li>
+                                <label>Email  :</label>
+                                <input data-validation="email" class="input_text" name="email" type="email">
+                            </li>
 
-                        <li>
-                            <label>Login Password  :</label>
-                            <input class="input_text"  type="password" name="password">
-                        </li>
+                            <li>
+                                <label>Login Password  :</label>
+                                <input data-validation="required" class="input_text"  type="password" name="password">
+                            </li>
 
-                        <li>
-                            <input type="submit" class="submit_button" value="register">
-                        </li>
-                    </ul>
+                            <li>
+                                <input type="submit" class="submit_button" value="register">
+                            </li>
+                        </ul>
+                    </form>
                 </div>
                 <div class="tab-pane" id="profile">
 <!--                    <ul>
@@ -320,7 +322,7 @@ populatedropdown("dob_dd", "dob_mm", "dob_yy")
 }
 
 var monthtext=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
-var monthnum=['01','02','03','04','05','06','07','08','09','10','11','12'];
+var monthnum=['00','01','02','03','04','05','06','07','08','09','10','11','12'];
 
 function populatedropdown(dayfield, monthfield, yearfield){
 var today=new Date()
