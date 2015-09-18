@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 14, 2015 at 05:23 PM
+-- Generation Time: Sep 18, 2015 at 06:02 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -6377,7 +6377,7 @@ CREATE TABLE IF NOT EXISTS `members` (
   `caste` varchar(255) NOT NULL,
   `mother_language` varchar(255) NOT NULL,
   `country` int(11) NOT NULL,
-  `mobile_no` int(10) unsigned NOT NULL,
+  `mobile_no` varchar(50) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `about_member` text NOT NULL,
@@ -6386,7 +6386,16 @@ CREATE TABLE IF NOT EXISTS `members` (
   `is_approved` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `matrimony_id` (`matrimony_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `members`
+--
+
+INSERT INTO `members` (`id`, `matrimony_id`, `profile_for`, `name`, `gender`, `date_of_birth`, `religion`, `caste`, `mother_language`, `country`, `mobile_no`, `email`, `password`, `about_member`, `have_membership`, `is_verified`, `is_approved`) VALUES
+(1, 'D1442483154', 'groom', 'Dummy Name', 'male', '1978-03-08 00:00:00', '1', '2', '1', 2, '9876543210', 'first.name@dummy.com', '8e4e3fe067fd2320882ebba18340cfe2', '', 0, 0, 0),
+(2, 'D1442486629', 'bride', 'Dummy Name', 'on', '1987-02-01 00:00:00', '1', '1', '1', 2, '9876543210', 'first.name@dummy.com', '8e4e3fe067fd2320882ebba18340cfe2', '', 0, 0, 0),
+(3, 'D1442487112', 'groom', 'Dummy Name', 'male', '1976-02-02 00:00:00', '1', '2', '1', 1, '9876543210', 'mayank.shakalya@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '', 0, 0, 0);
 
 -- --------------------------------------------------------
 

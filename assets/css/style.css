@@ -342,8 +342,10 @@ footer{ float:left; width:100%;}
 
 
 
-
-
+/*Customization*/
+.popover-input{
+    width: 245px;
+}
 
 
 

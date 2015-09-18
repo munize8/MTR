@@ -12,6 +12,14 @@
 <script type="text/javascript" src="<?php echo base_url('assets'); ?>/js/jquery-1.9.1.min.js"></script>
 <script src="<?php echo base_url('assets'); ?>/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url('assets'); ?>/js/modernizr.custom.17475.js" type="text/javascript"></script>
+<script src="<?php echo base_url('assets'); ?>/js/form-validator/form-validator/jquery.form-validator.min.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function(){
+        $.validate();
+    });
+</script>
+
 </head>
 
 <body>
