@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `ap_users` (
   `email` varchar(255) NOT NULL,
   `password` text NOT NULL,
   `is_admin` int(1) NOT NULL DEFAULT '0',
-  `created_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_on` datetime NOT NULL ,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
@@ -6343,7 +6343,7 @@ CREATE TABLE IF NOT EXISTS `media_files` (
   `news_media_id` int(11) NOT NULL,
   `file_source` text NOT NULL,
   `file_type` varchar(255) NOT NULL,
-  `created_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_on` datetime NOT NULL,
   `is_approved` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
@@ -6408,7 +6408,7 @@ CREATE TABLE IF NOT EXISTS `membership_plans` (
   `title` varchar(255) NOT NULL,
   `charges` float NOT NULL DEFAULT '0' COMMENT 'amount/month',
   `is_active` int(1) NOT NULL DEFAULT '1',
-  `created_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_on` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
@@ -6432,7 +6432,7 @@ CREATE TABLE IF NOT EXISTS `news_and_media` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `description` text NOT NULL,
-  `created_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_on` datetime NOT NULL ,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
