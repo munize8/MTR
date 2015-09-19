@@ -573,7 +573,6 @@ input[type="radio"].profile_pic{ margin:0 5px 0 0}
     line-height: 26px;
 	border-top:none;border-left:none;
     padding: 10px;
-    text-align: center;
 }
 #myTab1 li.active a{ background:#F0898A; color:#fff; position:relative; }
 #myTab1.nav-tabs > li.active > a::before{border-left: 10px solid #F0898A;  top:15px;}
@@ -842,26 +841,6 @@ input[type="radio"].profile_pic{ margin:0 5px 0 0}
 	.update_inner .input_text {  width: 75%;}
 	.add_pic_cont {font-size: 12px;    line-height: 20px;    padding: 13px 52px 0;}
 
-}
-#myTab .tel_no_pay {
-    color: #D71F15;
-    font-weight: 600;
-    border: 0;
-    width: 278px;
-    text-align: right;
-    margin: 0;
-	float:left;
-    font-size: 20px;
-    padding-top: 4px;
-	}
-#myTab span {
-    width: 110px;
-    float: right;
-	font-weight: 600;
-	color: black;
-}
-.carousel-control{
-top: 45%!important;
 }
 
 
