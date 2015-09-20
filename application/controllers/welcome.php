@@ -46,7 +46,7 @@ class Welcome extends CI_Controller {
             $this->email->message("Your Matrimony ID is: ".$set['matrimony_id']);
             $this->email->send();
             
-            redirect(base_url());
+            redirect(base_url('index.php/register/complete'));
             
 	}
 }

@@ -19,7 +19,20 @@
         $.validate();
     });
 </script>
+<script type="text/javascript">
+$(document).ready(function () {
 
+    $('a.log_out_btn').click(function (e) {
+		$(this).toggleClass("active_wh");
+        $('.profile_name ul').slideToggle(200);
+    });
+    $('.bottom_header_inner ul li').hover(function (e) {
+		$(this).toggleClass("active_wh");
+      
+    });
+
+});
+</script>
 </head>
 
 <body>

@@ -13,41 +13,62 @@
             	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            </ul>
-        </div>
+            </ul>      
+            <div class="profile_name">
+            	<img src="<?php echo base_url(); ?>/assets/images/user_pic.png"><span>Abhi (D406197)</span> <a href="#" class="log_out_btn"><img src="<?php echo base_url(); ?>/assets/images/services.png"></a>
+                <ul>
+                	<li><a href="#">Edit Profile</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div> 
+         </div>
     </div>
     </div>
-     <!--======= header bottom=========-->
+    <!--======= header bottom=========-->
     <div class="bottom_header_inner">
     	<div class="container">
-            <div class="col-sm-6">
-            	<a href="#"><img src="<?php echo base_url('assets'); ?>/images/logo.png"></a>
+            <div class="col-sm-5">
+                <a href="#"><img src="<?php echo base_url(); ?>/assets/images/logo.png"></a>
             </div>
-            <div class="col-sm-6">
-            	<div class="watch_img"><a href="#"><img src="<?php echo base_url('assets'); ?>/images/watch.png"></a></div>
+            <div class="col-sm-7">
+            
+            	<div class="watch_img"><a href="#"><img src="<?php echo base_url(); ?>/assets/images/watch.png"></a></div>
             	<ul>
-            	<li><a href="#"><i class="fa fa-long-arrow-right"></i> Jito Member</a></li>
-                <li><a id="login_button" href="javascript:void(0);" role="button" data-toggle="popover">Member login</a></li>
-                <section hidden id="login_section">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <label><small>Matrimony ID or Mobile Number or E-mail</small></label>
-                            <input data-validation="required" class="popover-input" type="text" name="username">
-                        </div>
-                    </div>
-                    <div class="row">    
-                        <div class="col-lg-12">
-                            <label><small>Password</small></label>
-                            <input  data-validation="required" class="popover-input" type="password" name="password">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <br>
-                        <div class="col-lg-12 margin-top-5">
-                            <input type="button" value="Login" class="btn btn-sm btn-danger">
-                        </div>
-                    </div>
-                </section>
+            	<li><a href="#"><i class="fa fa-long-arrow-right"></i> Jito Member</a>
+                	<ul class="member_form">
+                    	<li>
+                        		<label>JITO ID or Mobile Number or E-mail</label>
+                                <input type="text" name="name">
+                                <label>Password</label>
+                                <input type="password" name="password">
+                                <input type="checkbox">Keep me logged in
+                                <div class="btn_panel">
+                                	<a href="#"><img src="<?php echo base_url(); ?>/assets/images/fb_login_btn.jpg"></a> <span>or</span>
+                                    <a href="#"><img src="<?php echo base_url(); ?>/assets/images/login.jpg"></a>
+                                </div>
+                                <a href="#" class="for_grt">Forgot password?</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Member login</a>
+                	<ul class="member_form">
+                    	<li>
+                        		<label>Matrimony ID or Mobile Number or E-mail</label>
+                                <input type="text" name="name">
+                                <label>Password</label>
+                                <input type="password" name="password">
+                                <input type="checkbox">Keep me logged in
+                                <div class="btn_panel">
+                                	<a href="#"><img src="<?php echo base_url(); ?>/assets/images/fb_login_btn.jpg"></a> <span>or</span>
+                                    <a href="#"><img src="<?php echo base_url(); ?>/assets/images/login.jpg"></a>
+                                </div>
+                                <a href="#" class="for_grt">Forgot password?</a>
+                        </li>
+                    </ul>
+                
+                
+                </li>
             </ul>
             	
             </div>
@@ -69,7 +90,15 @@
               <ul class="nav navbar-nav">
                   <li class="active"><a href="<?php echo base_url();?>">Home</a></li>
                 <li><a href="<?php echo base_url('index.php/aboutus');?>">About us   </a></li> 
-                <li><a href="#">Search </a></li>  
+                <li><a >Search  </a>
+                	<ul>
+                    	<li>Regular search</li>
+                        <li>Advance search</li>
+                        <li>Keyword search</li>
+                        <li>Recently viewed profile</li>
+                        <li>Search by ID</li>
+                    </ul>
+                </li> 
                 <li><a href="<?php echo base_url('index.php/aboutus');?>">Media & Events  </a></li>   
                 <li><a href="<?php echo base_url('index.php/aboutus');?>">Contact us </a></li> 
               </ul>

@@ -40,6 +40,11 @@
 
 $route['default_controller'] = "welcome";
 $route['premium/chat'] = "chat/index";
+$route['register/complete'] = "register_complete_page/index";
+$route['profile/add/photo'] = "addphotopage/index";
+$route['search/regular'] = "regular_search/index";
+$route['search/advance'] = "advance_search/index";
+$route['search/keyword'] = "keyword_search/index";
 $route['404_override'] = '';
 
 
