@@ -49,6 +49,41 @@ class Welcome extends CI_Controller {
             redirect(base_url('index.php/register/complete'));
             
 	}
+	public function login_member()
+	{   
+      
+	 $email = $this->input->post('email');
+
+   
+     $this->db->where('email',$email);
+     $this->db->where('password',md5($this->input->post('password')));
+     
+     $query=$this->db->get('members');
+
+     if($query->num_rows()== 1)
+     {
+     	 $header = $this->load->view('common/header',array(),true);
+            $content = $this->load->view('site/profile_page_design',array(),true);
+            $footer = $this->load->view('common/footer',array(),true);
+		$this->load->view('base',  compact('header','content','footer'));
+		 $this->session->set_flashdata('sessinfo','Login successfully');
+        return true; 
+     }else 
+     {
+     	$header = $this->load->view('common/header',compact('registered'),true);
+            $content = $this->load->view('site/index',array(),true);
+            $footer = $this->load->view('common/footer',array(),true);
+		
+            $this->load->view('base',  compact('header','content','footer'));
+            $this->session->set_flashdata('sessinfo','Login Failled');
+      return false;
+     }
+	}
+	public function logout()
+    {
+        $this->session->sess_destroy();
+        header("Location:". base_url("index.php/welcome"));
+    }
 }
 
 /* End of file welcome.php */
