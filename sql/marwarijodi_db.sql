@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS `ap_users` (
   `lastname` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` text NOT NULL,
+  
   `is_admin` int(1) NOT NULL DEFAULT '0',
   `created_on` datetime NOT NULL ,
   PRIMARY KEY (`id`)
