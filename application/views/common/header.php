@@ -19,7 +19,7 @@
                 <ul>
                 	<li><a href="#">Edit Profile</a></li>
                     <li><a href="#">Feedback</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="<?php echo base_url('index.php/welcome/logout');?>">Logout</a></li>
                 </ul>
             </div> 
          </div>
@@ -53,18 +53,22 @@
                 </li>
                 <li><a href="#">Member login</a>
                 	<ul class="member_form">
+                        <!--<mark><?php //echo  $this->session->flashdata('sessinfo'); ?></mark>-->
+                        <form action="<?php echo base_url('index.php/welcome/login_member');?>" method="post">
                     	<li>
                         		<label>Matrimony ID or Mobile Number or E-mail</label>
-                                <input type="text" name="name">
+                                <input data-validation="required" type="text" name="name">
                                 <label>Password</label>
-                                <input type="password" name="password">
+                                <input data-validation="required" type="password" name="password">
                                 <input type="checkbox">Keep me logged in
                                 <div class="btn_panel">
                                 	<a href="#"><img src="<?php echo base_url(); ?>/assets/images/fb_login_btn.jpg"></a> <span>or</span>
-                                    <a href="#"><img src="<?php echo base_url(); ?>/assets/images/login.jpg"></a>
+                                    <!--<a href="#"></a>-->
+                                    <button  type="submit"><img src="<?php echo base_url(); ?>/assets/images/login.jpg"></button>
                                 </div>
                                 <a href="#" class="for_grt">Forgot password?</a>
                         </li>
+                        </form>
                     </ul>
                 
                 

@@ -81,7 +81,7 @@ The results of this search will be closer to your expectations.</p>
     </div>
     
     </div>
-    <div class="col-md-3">
+    <<div class="col-md-3">
     	<div class="update_inner mar_175">
             	<h4>Search by ID</h4>
                 <form>

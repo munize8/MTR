@@ -1,4 +1,4 @@
-
+<mark><?php echo  $this->session->flashdata('sessinfo'); ?></mark>
 <div class="main_container">
 <div class="container">
 	
